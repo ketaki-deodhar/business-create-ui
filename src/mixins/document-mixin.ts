@@ -68,7 +68,7 @@ export default class DocumentMixin extends Vue {
       const [x, y, w, h] = p1._pageInfo.view
       const width = w - x
       const height = h - y
-      let isvalidPageSize = (width / pageSizeInfo.pointsPerInch === pageSizeInfo.width) &&
+      const isvalidPageSize = (width / pageSizeInfo.pointsPerInch === pageSizeInfo.width) &&
         (height / pageSizeInfo.pointsPerInch === pageSizeInfo.height)
       if (!isvalidPageSize) return false
     }

@@ -51,10 +51,10 @@ import { Getter, Action } from 'vuex-class'
 import { ActionBindingIF, AddressIF, ContactPointIF, DefineCompanyIF, RegisteredRecordsAddressesIF }
   from '@/interfaces'
 import { CommonMixin } from '@/mixins'
-import { CoopTypes, RouteNames } from '@/enums'
 import { CorpTypeCd } from '@bcrs-shared-components/enums/'
 import BusinessContactInfo from '@/components/common/BusinessContactInfo.vue'
 import OfficeAddresses from '@/components/common/OfficeAddresses.vue'
+import { RouteNames } from '@/enums'
 
 @Component({
   components: {

@@ -73,7 +73,7 @@ import { Component, Watch } from 'vue-property-decorator'
 import { DateMixin, CommonMixin } from '@/mixins'
 import { Getter, Action } from 'vuex-class'
 import { RestorationTypes } from '@/enums'
-import { RestorationStateIF } from '@/interfaces'
+import { ActionBindingIF, RestorationStateIF } from '@/interfaces'
 import { RelationshipsPanel } from '@bcrs-shared-components/relationships-panel'
 import { LimitedRestorationPanel } from '@bcrs-shared-components/limited-restoration-panel'
 

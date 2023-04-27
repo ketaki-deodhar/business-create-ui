@@ -95,9 +95,9 @@
 
 <script lang="ts">
 import Vue from 'vue'
-import { Component, Watch } from 'vue-property-decorator'
+import { Component } from 'vue-property-decorator'
 import { DateMixin } from '@/mixins'
-import { Getter, Action } from 'vuex-class'
+import { Getter } from 'vuex-class'
 import { ApprovalTypes, RouteNames } from '@/enums'
 import { CorpTypeCd, CorrectNameOptions } from '@bcrs-shared-components/enums/'
 import { NameTranslationIF, RestorationStateIF } from '@/interfaces'
