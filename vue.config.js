@@ -9,7 +9,6 @@ const sbcName = JSON.parse(packageJson).sbcName
 const sbcVersion = JSON.parse(packageJson).dependencies['sbc-common-components']
 const aboutText1 = (appName && appVersion) ? `${appName} v${appVersion}` : ''
 const aboutText2 = (sbcName && sbcVersion) ? `${sbcName} v${sbcVersion}` : ''
-const NodePolyfillPlugin = require('node-polyfill-webpack-plugin')
 
 module.exports = {
   configureWebpack: {
@@ -22,8 +21,7 @@ module.exports = {
               : aboutText2 ? `"${aboutText2}"`
                 : ''
         }
-      }),
-      new NodePolyfillPlugin()
+      })
     ],
     devtool: 'source-map'
   },

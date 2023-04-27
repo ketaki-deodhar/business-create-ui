@@ -4,7 +4,7 @@ import { AxiosResponse } from 'axios'
 import { AxiosInstance as axios } from '@/utils'
 import { DocumentUpload, PdfInfoIF } from '@/interfaces'
 import { PdfPageSize } from '@/enums'
-import pdfjsLib from 'pdfjs-dist/build/pdf'
+import * as pdfjsLib from 'pdfjs-dist/build/pdf'
 pdfjsLib.GlobalWorkerOptions.workerSrc = require('pdfjs-dist/build/pdf.worker.entry')
 
 @Component({})
