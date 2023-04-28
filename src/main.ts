@@ -4,7 +4,7 @@ import 'regenerator-runtime/runtime' // to use transpiled generator functions
 
 // Vue Libraries
 import Vue from 'vue'
-import Vuetify from 'vuetify/lib'
+import Vuetify from 'vuetify'
 import Vuelidate from 'vuelidate'
 import { getVueRouter } from '@/router'
 import { getVuexStore } from '@/store'
@@ -17,6 +17,7 @@ import Hotjar from 'vue-hotjar'
 
 // Styles
 // NB: order matters - do not change
+import 'vuetify/dist/vuetify.min.css'
 import '@mdi/font/css/materialdesignicons.min.css' // ensure you are using css-loader
 import '@/assets/styles/base.scss'
 import '@/assets/styles/layout.scss'
